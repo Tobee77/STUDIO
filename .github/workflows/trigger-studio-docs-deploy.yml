@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger deploy hook
-        run: |
+        run: 
           curl -X POST ${{ secrets.STUDIO_DOCS_DEPLOY_HOOK }}
